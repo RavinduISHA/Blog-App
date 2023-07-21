@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body{
   color: #222;
 }
@@ -66,4 +70,38 @@ div.post p.info a.author{
 div.post p.summary{
   margin: 10px 0;
   line-height: 1.4rem;
+}
+
+form.register{
+  max-width: 500px;
+  margin: 0 auto;
+}
+form.login{
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input{
+  display: flex;
+  margin-bottom: 8px;
+  width: 100%;
+  padding: 5px 7px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #d0caca;
+}
+
+button{
+  width: 100%;
+  display: block;
+  background-color: rgb(56, 56, 255);
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 0;
+  cursor: pointer;
+}
+
+form h1{
+  text-align: center;
 }
