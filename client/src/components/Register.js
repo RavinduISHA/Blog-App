@@ -15,7 +15,12 @@ export default function Register() {
 
   const register = async (e) => {
     e.preventDefault();
-    await Axios.post("http://localhost:4000/register", user);
+    const res = await Axios.post("http://localhost:4000/register", user);
+    if(res.status !== 200){
+      alert('registration Failed!');
+    } else {
+      alert('registration Success');
+    }
   }
   return (
     <>
